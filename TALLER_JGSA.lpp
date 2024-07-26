@@ -1,0 +1,94 @@
+/*
+Taller - Juan Gabriel Serrano Anaya
+*/
+
+Entero opcion, inversion1, inversion2, inversion3, sueldo, nuevo_sueldo, horas, valor_hora, cantidad_articulos, i
+Real porcentaje1, porcentaje2, porcentaje3
+Cadena[1] respuesta
+
+	Registro articulos
+		Cadena[30]nombre_articulo
+		Entero cantidad_articulo
+		Entero valor_articulo
+	Fin Registro
+
+	
+
+
+INICIO
+	Escriba "Bienvenido al software de ejercicios"
+	Llamar nueva_linea
+	Escriba "Seleccione una opción: "
+	Lea opcion
+	Si (opcion < 1) o (opcion > 20) entonces
+		Escriba "Ha digitado una opción incorrecta, por favor vuelva a intentarlo"
+	Sino
+		
+		
+		Caso opcion
+			1 :		/* 1. Tres personas deciden invertir su dinero para formar una empresa. Cada una de ellas invierte una cantidad distinta. Hacer un algoritmo que imprima el porcentaje que cada quien invierte con respecto al total de la inversión. */
+					Escriba "Bienvenido al ejercicio No.1"
+					Llamar nueva_linea
+					Escriba "Digite la inverión del primer socio: "
+					Lea inversion1
+					Llamar nueva_linea
+					Escriba "Digite la inverión del segundo socio: "
+					Lea inversion2
+					Llamar nueva_linea
+					Escriba "Digite la inverión del Tercer socio: "
+					Lea inversion3
+					porcentaje1 <- inversion1 / (inversion1+inversion2+inversion3) * 100
+					porcentaje2 <- inversion2 / (inversion1+inversion2+inversion3) * 100
+					porcentaje3 <- inversion3 / (inversion1+inversion2+inversion3) * 100
+					Escriba "Las inversiones fueron las siguientes: "
+					Llamar nueva_linea
+					Escriba "El primer inversionista hizo un aporte del ", porcentaje1, "%"
+					Llamar nueva_linea
+					Escriba "El segundo inversionista hizo un aporte del ", porcentaje2, "%"
+					Llamar nueva_linea
+					Escriba "El tercer inversionista hizo un aporte del ", porcentaje3, "%"
+					
+			2:		/*Hacer un algoritmo que imprima el nuevo sueldo de un empleado si tuvo un aumento del 10%.*/
+					Escriba "Bienvenido al ejercicio No.2"
+					Llamar nueva_linea
+					Escriba "Escriba el sueldo del empleado: "
+					Lea sueldo
+					Llamar nueva_linea
+					Escriba "El empleado tuvo aumento autorizado del 10% Y / N?: "
+					Lea respuesta
+					Si (respuesta = "Y") o (respuesta=  "y") Entonces
+						nuevo_sueldo <- sueldo + (sueldo * 0.10)
+						Llamar nueva_linea
+						Escriba "El nuevo sueldo del empleado es de: $", nuevo_sueldo
+					Sino
+						Si (respuesta = "N") o (respuesta = "n") Entonces
+							Llamar nueva_linea
+							Escriba "El sueldo se mantiene en: $", sueldo
+						Fin Si
+					Fin Si
+					
+			3:		/* Dada las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimirlo. */
+					Escriba "Bienvenido al ejercicio No. 3"
+					Llamar nueva_linea
+					Escriba "digite las horas trabajadas del empleado: "
+					Lea horas
+					Llamar nueva_linea
+					Escriba "Ahora digite el valor de la hora del empleado: $"
+					Lea valor_hora
+					sueldo <- valor_hora * horas
+					Llamar nueva_linea
+					Escriba "El salario del empleado es de: $",sueldo
+					
+			4:		/* Escriba el algoritmo que permita emitir la factura correspondiente a una compra de varios artículos (6) determinados, del que se adquieren una o varias unidades. El IVA es del 19%. */
+					Escriba "Bienvenido al ejercicio No. 4"
+					Llamar nueva_linea
+					Escriba "Cuántos artículos va a comprar?: "
+					Lea cantidad_articulos
+					Para i <- 1 hasta cantidad_articulos
+						Escriba "Vamos con el artículo ", i, ", Escribe el nombre:"
+						Lea nombre_articulo
+						Llamar nueva_linea
+						
+		Fin Caso
+	Fin Si
+FIN

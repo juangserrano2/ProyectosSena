@@ -2,17 +2,37 @@
 Taller - Juan Gabriel Serrano Anaya
 */
 
-Entero opcion, inversion1, inversion2, inversion3, sueldo, nuevo_sueldo, horas, valor_hora, cantidad_articulos, i
+
+//Variables Generales
+Entero opcion
+
+// Variables Ejercicio 1
+Entero inversion1, inversion2, inversion3
 Real porcentaje1, porcentaje2, porcentaje3
-Cadena[1] respuesta
 
-	Registro articulos
-		Cadena[30]nombre_articulo
-		Entero cantidad_articulo
-		Entero valor_articulo
-	Fin Registro
+// Variables Ejercicio 2
+Entero sueldo, nuevo_sueldo
+Cadena [1] respuesta
 
-	
+// Variables Ejercicio 3
+Entero horas, valor_hora
+
+// Variables Ejercicio 4
+Cadena [30]articulo1
+Cadena [30] articulo2
+Cadena [30] articulo3
+Cadena [30] articulo4
+Cadena [30] articulo5
+Cadena [30] articulo6
+Entero cant_articulo1, cant_articulo2, cant_articulo3, cant_articulo4, cant_articulo5, cant_articulo6
+Entero val_articulo1, val_articulo2, val_articulo3, val_articulo4, val_articulo5, val_articulo6
+Real iva
+Entero total1, total2, total3, total4, total5, total6, subtotal, total
+
+
+
+// Variables Ejercicio 5
+Entero monto, monto_iva, total_pagar, pago_cliente, cambio
 
 
 INICIO
@@ -23,8 +43,6 @@ INICIO
 	Si (opcion < 1) o (opcion > 20) entonces
 		Escriba "Ha digitado una opción incorrecta, por favor vuelva a intentarlo"
 	Sino
-		
-		
 		Caso opcion
 			1 :		/* 1. Tres personas deciden invertir su dinero para formar una empresa. Cada una de ellas invierte una cantidad distinta. Hacer un algoritmo que imprima el porcentaje que cada quien invierte con respecto al total de la inversión. */
 					Escriba "Bienvenido al ejercicio No.1"
@@ -82,13 +100,119 @@ INICIO
 			4:		/* Escriba el algoritmo que permita emitir la factura correspondiente a una compra de varios artículos (6) determinados, del que se adquieren una o varias unidades. El IVA es del 19%. */
 					Escriba "Bienvenido al ejercicio No. 4"
 					Llamar nueva_linea
-					Escriba "Cuántos artículos va a comprar?: "
-					Lea cantidad_articulos
-					Para i <- 1 hasta cantidad_articulos
-						Escriba "Vamos con el artículo ", i, ", Escribe el nombre:"
-						Lea nombre_articulo
-						Llamar nueva_linea
-						
+					Escriba "Vamos con el primer artículo. Escribe el nombre: "
+					Lea articulo1
+					Llamar nueva_linea
+					Escriba "Digita el valor del primer artículo: $"
+					Lea val_articulo1
+					Llamar nueva_linea
+					Escriba "Digita la cantidad adquirida del primer artículo: "
+					Lea cant_articulo1
+					Llamar nueva_linea
+					Escriba "Vamos con el segundo artículo. Escribe el nombre: "
+					Lea articulo2
+					Llamar nueva_linea
+					Escriba "Digita el valor del segundo artículo: $"
+					Lea val_articulo2
+					Llamar nueva_linea
+					Escriba "Digita la cantidad adquirida del segundo artículo: "
+					Lea cant_articulo2
+					Llamar nueva_linea
+					Escriba "Vamos con el tercer artículo. Escribe el nombre: "
+					Lea articulo3
+					Llamar nueva_linea
+					Escriba "Digita el valor del tercer artículo: $"
+					Lea val_articulo3
+					Llamar nueva_linea
+					Escriba "Digita la cantidad adquirida del tercer artículo: "
+					Lea cant_articulo3
+					Llamar nueva_linea
+					Escriba "Vamos con el cuarto artículo. Escribe el nombre: "
+					Lea articulo4
+					Llamar nueva_linea
+					Escriba "Digita el valor del cuarto artículo: $"
+					Lea val_articulo4
+					Llamar nueva_linea
+					Escriba "Digita la cantidad adquirida del cuarto artículo: "
+					Lea cant_articulo4
+					Llamar nueva_linea
+					Escriba "Vamos con el quinto artículo. Escribe el nombre: "
+					Lea articulo5
+					Llamar nueva_linea
+					Escriba "Digita el valor del quinto artículo: $"
+					Lea val_articulo5
+					Llamar nueva_linea
+					Escriba "Digita la cantidad adquirida del quinto artículo: "
+					Lea cant_articulo5
+					Llamar nueva_linea
+					Escriba "Vamos con el sexto artículo. Escribe el nombre: "
+					Lea articulo6
+					Llamar nueva_linea
+					Escriba "Digita el valor del sexto artículo: $"
+					Lea val_articulo6
+					Escriba "Digita la cantidad adquirida del sexto artículo: "
+					Lea cant_articulo6
+					Llamar nueva_linea
+					total1 <- val_articulo1 * cant_articulo1
+					total2 <- val_articulo2 * cant_articulo2
+					total3 <- val_articulo3 * cant_articulo3
+					total4 <- val_articulo4 * cant_articulo4
+					total5 <- val_articulo5 * cant_articulo5
+					total6 <- val_articulo6 * cant_articulo6
+					subtotal <- total1 + total2 + total3 + total4 + total5 + total6
+					iva <- subtotal * 0.19
+					total <- subtotal + iva
+					Escriba "Relación de Artículos"
+					Llamar nueva_linea
+					Escriba "ARTICULO			CANTIDAD			VALOR UNITARIO			VALOR TOTAL"
+					Llamar nueva_linea
+					Escriba "1.			",articulo1,"			$",val_articulo1,"			$",total1
+					Llamar nueva_linea
+					Escriba "2.			",articulo2,"			$",val_articulo2,"			$",total2
+					Llamar nueva_linea
+					Escriba "3.			",articulo3,"			$",val_articulo3,"			$",total3
+					Llamar nueva_linea
+					Escriba "4.			",articulo4,"			$",val_articulo4,"			$",total4
+					Llamar nueva_linea
+					Escriba "5.			",articulo5,"			$",val_articulo5,"			$",total5
+					Llamar nueva_linea
+					Escriba "6.			",articulo6,"			$",val_articulo6,"			$",total6
+					Llamar nueva_linea
+					Llamar nueva_linea
+					Escriba "SUBTOTAL: $",subtotal
+					Llamar nueva_linea
+					Escriba "IVA: $",iva
+					Llamar nueva_linea
+					Escriba "TOTAL A PAGAR: $", total
+
+
+			5:		/* Suponga que tiene Ud. una tienda y desea registrar las ventas en una computadora. Diseñe un algoritmo en pseudocódigo que lea por cada cliente:
+					- El monto de la venta calcule e imprima el IVA.
+					- Calcule e imprima en total a pagar.
+					- Lea la cantidad con la que paga el cliente calcule e imprima el cambio.
+					*/
+					
+					Escriba "Bienvenido al ejercicio No. 5"
+					Llamar nueva_linea
+					Escriba "Digite el monto de la venta: $"
+					Lea monto
+					Llamar nueva_linea
+					Escriba "Digite el porcentaje del IVA: "
+					Lea iva
+					Llamar nueva_linea
+					Escriba "Digite el valor del dinero entregado por el cliente: $"
+					Lea pago_cliente
+					monto_iva <- monto * iva
+					total_pagar <- monto + monto_iva
+					cambio <- pago_cliente - total_pagar
+					Llamar nueva_linea
+					Escriba "El monto de la venta es de: $",monto
+					Llamar nueva_linea
+					Escriba "El IVA es por: $", monto_iva
+					Llamar nueva_linea
+					Escriba "Total a pagar: $", total_pagar
+					Llamar nueva_linea
+					Escriba "Cambio: $", cambio
 		Fin Caso
 	Fin Si
 FIN

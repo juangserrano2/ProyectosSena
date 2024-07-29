@@ -1,0 +1,32 @@
+/* Elabora un algoritmo que solicite la edad de dos (2) hermanos y muestre un mensaje indicando 
+la edad del mayor y cuantos años de diferencia tiene con el menor. */
+
+Entero edad1, edad2, diferencia_edad
+
+INICIO
+	Escriba "Vamos a validar las edades de los(as) hermanos(as)."
+	Llamar nueva_linea
+	Escriba "Escriba la edad del hermano(a) 1: "
+	Lea edad1
+	Llamar nueva_linea
+	Escriba "Escriba la edad del hermano(a) 2: "
+	Lea edad2
+	Si edad1 > edad2 Entonces
+		diferencia_edad <- edad1 - edad2
+		Llamar nueva_linea
+		Escriba "La edad del hermano(a) mayor es de: ", edad1, " años."
+		Llamar nueva_linea
+		Escriba "La diferencia de años con respecto al hermano(a) menor es de: ", diferencia_edad, " años."
+	Sino
+		Si edad1 < edad2 Entonces
+			diferencia_edad <- edad2 - edad1
+			Llamar nueva_linea
+			Escriba "La edad del hermano(a) mayor es de: ", edad2, " años."
+			Llamar nueva_linea
+			Escriba "La diferencia de años con respecto al hermano(a) menor es de: ", diferencia_edad, " años."
+		Sino
+			Escriba "Las dos edades son iguales."
+		Fin Si
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

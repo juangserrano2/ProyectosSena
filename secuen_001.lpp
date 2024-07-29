@@ -1,0 +1,35 @@
+/*
+1. Tres personas deciden invertir su dinero para formar una empresa. Cada una de ellas invierte una cantidad distinta.
+Hacer un algoritmo que imprima el porcentaje que cada quien invierte con respecto al total de la inversión.
+*/
+
+Entero inversion1, inversion2, inversion3, total_inversion
+Real porcentaje1, porcentaje2, porcentaje3
+
+
+INICIO
+Escriba "Bienvenido al ejercicio No.1"
+Llamar nueva_linea
+Escriba "Digite la inverión del primer socio: "
+Lea inversion1
+Llamar nueva_linea
+Escriba "Digite la inverión del segundo socio: "
+Lea inversion2
+Llamar nueva_linea
+Escriba "Digite la inverión del Tercer socio: "
+Lea inversion3
+total_inversion <- inversion1 + inversion2 + inversion3
+porcentaje1 <- inversion1 / (inversion1+inversion2+inversion3) * 100
+porcentaje2 <- inversion2 / (inversion1+inversion2+inversion3) * 100
+porcentaje3 <- inversion3 / (inversion1+inversion2+inversion3) * 100
+Escriba "El total de la inversión es de: $",total_inversion
+Llamar nueva_linea
+Escriba "Las inversiones fueron las siguientes: "
+Llamar nueva_linea
+Escriba "El primer inversionista hizo un aporte del ", porcentaje1, "%"
+Llamar nueva_linea
+Escriba "El segundo inversionista hizo un aporte del ", porcentaje2, "%"
+Llamar nueva_linea
+Escriba "El tercer inversionista hizo un aporte del ", porcentaje3, "%"
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

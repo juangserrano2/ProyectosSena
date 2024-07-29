@@ -1,0 +1,19 @@
+/*
+3. Dada las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimirlo.
+*/
+
+Entero horas, valor_hora, sueldo
+
+INICIO
+	Escriba "Bienvenido al ejercicio No. 3"
+	Llamar nueva_linea
+	Escriba "digite las horas trabajadas del empleado: "
+	Lea horas
+	Llamar nueva_linea
+	Escriba "Ahora digite el valor de la hora del empleado: $"
+	Lea valor_hora
+	sueldo <- valor_hora * horas
+	Llamar nueva_linea
+	Escriba "El salario del empleado es de: $",sueldo
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

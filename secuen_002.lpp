@@ -1,0 +1,27 @@
+/*
+2. Hacer un algoritmo que imprima el nuevo sueldo de un empleado si tuvo un aumento del 10%.
+*/
+
+Entero sueldo, nuevo_sueldo
+Cadena [1] respuesta
+
+INICIO
+	Escriba "Bienvenido al ejercicio No.2"
+	Llamar nueva_linea
+	Escriba "Escriba el sueldo del empleado: "
+	Lea sueldo
+	Llamar nueva_linea
+	Escriba "El empleado tuvo aumento autorizado del 10% Y / N?: "
+	Lea respuesta
+	Si (respuesta = "Y") o (respuesta=  "y") Entonces
+		nuevo_sueldo <- sueldo + (sueldo * 0.10)
+		Llamar nueva_linea
+		Escriba "El nuevo sueldo del empleado es de: $", nuevo_sueldo
+	Sino
+		Si (respuesta = "N") o (respuesta = "n") Entonces
+			Llamar nueva_linea
+			Escriba "El sueldo se mantiene en: $", sueldo
+		Fin Si
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

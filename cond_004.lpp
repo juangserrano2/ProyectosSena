@@ -1,0 +1,36 @@
+/* 04. Se tiene registrado la producción (unidades) logradas por un operario a lo largo de la semana (lunes a sábado).
+Elabore un algoritmo que nos muestre o nos diga si el operario recibirá incentivos sabiendo que el promedio de producción mínima es de 100 unidades. */
+
+Entero prod_lunes, prod_martes, prod_miercoles, prod_jueves, prod_viernes, prod_sabado, prod_semana
+
+
+INICIO
+	Escriba "Vamos a registrar las unidades producidas por el operario."
+	Llamar nueva_linea
+	Escriba "Escriba el producido del lunes: "
+	Lea prod_lunes
+	Llamar nueva_linea
+	Escriba "Escriba el producido del martes: "
+	Lea prod_martes
+	Llamar nueva_linea
+	Escriba "Escriba el producido del miercoles: "
+	Lea prod_miercoles
+	Llamar nueva_linea
+	Escriba "Escriba el producido del jueves: "
+	Lea prod_jueves
+	Llamar nueva_linea
+	Escriba "Escriba el producido del viernes: "
+	Lea prod_viernes
+	Llamar nueva_linea
+	Escriba "Escriba el producido del sábado: "
+	Lea prod_sabado
+	Llamar nueva_linea
+	Llamar nueva_linea
+	prod_semana <- prod_lunes + prod_martes + prod_miercoles + prod_jueves + prod_viernes + prod_sabado
+	Si prod_semana > 100 Entonces
+		Escriba "El operario recibirá incentivos por haber producido ", prod_semana, " unidades esta semana."
+	Sino
+		Escriba "El operario no recibirá incentivos esta semana por haber producido ", prod_semana, " unidades esta semana."
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

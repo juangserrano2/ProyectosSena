@@ -1,0 +1,21 @@
+/* Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera: 
+Si trabaja 40 horas o menos, se le paga $16,000 por hora. Si trabaja más de 40 horas, se le paga $16,000 
+por cada de las primeras 40 horas y $20,000 por cada hora extra. */
+
+Entero horas_trabajadas, salario_semana, horas_extras
+
+INICIO
+	Escriba "Calculo de Salario Semanal."
+	Llamar nueva_linea
+	Escriba "Digite el número de horas trabajadas: "
+	Lea horas_trabajadas
+	Si horas_trabajadas <= 40 Entonces
+		salario_semana <- 16000 * horas_trabajadas
+		Escriba "El salario de esta semana es de: $", salario_semana
+	Sino
+		horas_extras <- horas_trabajadas - 40
+		Salario_semana <- (16000 * (horas_trabajadas-horas_extras)) + (20000 * horas_extras)
+		Escriba "El salario de esta semana es de: $", salario_semana
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

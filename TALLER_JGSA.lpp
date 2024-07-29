@@ -164,19 +164,19 @@ INICIO
 					total <- subtotal + iva
 					Escriba "Relación de Artículos"
 					Llamar nueva_linea
-					Escriba "ARTICULO			CANTIDAD			VALOR UNITARIO			VALOR TOTAL"
+					Escriba "No.				ARTICULO			VALOR UNITARIO				CANTIDAD				VALOR TOTAL"
 					Llamar nueva_linea
-					Escriba "1.			",articulo1,"			$",val_articulo1,"			$",total1
+					Escriba "1.				",articulo1,"			$",val_articulo1,"			",cant_articulo1,"		$",total1		
 					Llamar nueva_linea
-					Escriba "2.			",articulo2,"			$",val_articulo2,"			$",total2
+					Escriba "2.				",articulo2,"			$",val_articulo2,"			",cant_articulo2,"		$",total2		
 					Llamar nueva_linea
-					Escriba "3.			",articulo3,"			$",val_articulo3,"			$",total3
+					Escriba "3.				",articulo3,"			$",val_articulo3,"			",cant_articulo3,"		$",total3		
 					Llamar nueva_linea
-					Escriba "4.			",articulo4,"			$",val_articulo4,"			$",total4
+					Escriba "4.				",articulo4,"			$",val_articulo4,"			",cant_articulo4,"		$",total4		
 					Llamar nueva_linea
-					Escriba "5.			",articulo5,"			$",val_articulo5,"			$",total5
+					Escriba "5.				",articulo5,"			$",val_articulo5,"			",cant_articulo5,"		$",total5		
 					Llamar nueva_linea
-					Escriba "6.			",articulo6,"			$",val_articulo6,"			$",total6
+					Escriba "6.				",articulo6,"			$",val_articulo6,"			",cant_articulo6,"		$",total6		
 					Llamar nueva_linea
 					Llamar nueva_linea
 					Escriba "SUBTOTAL: $",subtotal
@@ -213,6 +213,22 @@ INICIO
 					Escriba "Total a pagar: $", total_pagar
 					Llamar nueva_linea
 					Escriba "Cambio: $", cambio
+					
+					
+			6:		/* Desarrollar un algoritmo que permita generar la colilla de pago de los empleados de una empresa. La colilla debe mostrar:
+					- El Salario del Empleado.
+					- El Valor de Ahorro mensual programado (suponiendo que un empleado decide ahorrar un porcentaje del 1% de dinero que se deducirá del pago).
+					- La suma a deducir por aporte a la Salud (EPS).
+					- La suma a deducir por aporte al Fondo de Pensiones (AFP).
+					- Total, a recibir.
+					
+					El porcentaje establecido por ley para Pensión y Salud es del 4%. Toda la información que debe proveer el usuario del programa es el Salario del Empleado y la El Valor de Ahorro mensual programado. El programa debe calcular y devolver el resto de los datos.
+					*/
+					
+					Escriba "Bienvenido al ejercicio No. 6"
+					Llamar nueva_linea
+					
 		Fin Caso
 	Fin Si
 FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

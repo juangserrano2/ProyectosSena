@@ -1,0 +1,89 @@
+/*
+4. Escriba el algoritmo que permita emitir la factura correspondiente a una compra de varios artículos (6) determinados, 
+del que se adquieren una o varias unidades. El IVA es del 19%.
+*/
+
+Cadena [30]articulo1
+Cadena [30] articulo2
+Cadena [30] articulo3
+Cadena [30] articulo4
+Cadena [30] articulo5
+Cadena [30] articulo6
+Entero cant_articulo1, cant_articulo2, cant_articulo3, cant_articulo4, cant_articulo5, cant_articulo6
+Entero val_articulo1, val_articulo2, val_articulo3, val_articulo4, val_articulo5, val_articulo6
+Real iva
+Entero total1, total2, total3, total4, total5, total6, subtotal, total
+
+INICIO
+	Escriba "Bienvenido al ejercicio No. 4"
+	Llamar nueva_linea
+	Escriba "Vamos con el primer artículo. Escribe el nombre: "
+	Lea articulo1
+	Escriba "Digita el valor del primer artículo: $"
+	Lea val_articulo1
+	Escriba "Digita la cantidad adquirida del primer artículo: "
+	Lea cant_articulo1
+	Escriba "Vamos con el segundo artículo. Escribe el nombre: "
+	Lea articulo2
+	Escriba "Digita el valor del segundo artículo: $"
+	Lea val_articulo2
+	Escriba "Digita la cantidad adquirida del segundo artículo: "
+	Lea cant_articulo2
+	Escriba "Vamos con el tercer artículo. Escribe el nombre: "
+	Lea articulo3
+	Escriba "Digita el valor del tercer artículo: $"
+	Lea val_articulo3
+	Escriba "Digita la cantidad adquirida del tercer artículo: "
+	Lea cant_articulo3
+	Escriba "Vamos con el cuarto artículo. Escribe el nombre: "
+	Lea articulo4
+	Escriba "Digita el valor del cuarto artículo: $"
+	Lea val_articulo4
+	Escriba "Digita la cantidad adquirida del cuarto artículo: "
+	Lea cant_articulo4
+	Escriba "Vamos con el quinto artículo. Escribe el nombre: "
+	Lea articulo5
+	Escriba "Digita el valor del quinto artículo: $"
+	Lea val_articulo5
+	Escriba "Digita la cantidad adquirida del quinto artículo: "
+	Lea cant_articulo5
+	Escriba "Vamos con el sexto artículo. Escribe el nombre: "
+	Lea articulo6
+	Escriba "Digita el valor del sexto artículo: $"
+	Lea val_articulo6
+	Escriba "Digita la cantidad adquirida del sexto artículo: "
+	Lea cant_articulo6
+	Llamar nueva_linea
+	total1 <- val_articulo1 * cant_articulo1
+	total2 <- val_articulo2 * cant_articulo2
+	total3 <- val_articulo3 * cant_articulo3
+	total4 <- val_articulo4 * cant_articulo4
+	total5 <- val_articulo5 * cant_articulo5
+	total6 <- val_articulo6 * cant_articulo6
+	subtotal <- total1 + total2 + total3 + total4 + total5 + total6
+	iva <- subtotal * 0.19
+	total <- subtotal + iva
+	Escriba "Relación de Artículos"
+	Llamar nueva_linea
+	Escriba "No.		ARTICULO	V. UNITARIO	CANTIDAD	V. TOTAL"
+	Llamar nueva_linea
+	Escriba "1.		",articulo1,"		$",val_articulo1,"		",cant_articulo1,"		$",total1
+	Llamar nueva_linea
+	Escriba "2.		",articulo2,"		$",val_articulo2,"		",cant_articulo2,"		$",total2
+	Llamar nueva_linea
+	Escriba "3.		",articulo3,"		$",val_articulo3,"		",cant_articulo3,"		$",total3
+	Llamar nueva_linea
+	Escriba "4.		",articulo4,"		$",val_articulo4,"		",cant_articulo4,"		$",total4
+	Llamar nueva_linea
+	Escriba "5.		",articulo5,"		$",val_articulo5,"		",cant_articulo5,"		$",total5
+	Llamar nueva_linea
+	Escriba "6.		",articulo6,"		$",val_articulo6,"		",cant_articulo6,"		$",total6
+	Llamar nueva_linea
+	Llamar nueva_linea
+	Escriba "SUBTOTAL: $",subtotal
+	Llamar nueva_linea
+	Escriba "IVA: $",iva
+	Llamar nueva_linea
+	Escriba "TOTAL A PAGAR: $", total
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

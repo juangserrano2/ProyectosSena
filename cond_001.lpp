@@ -1,0 +1,15 @@
+/*1. Diseñe un algoritmo que determine si la persona es o no, mayor de edad.*/
+Entero edad
+
+INICIO
+	Escriba "Bienvenido al Sistema de Mayoría de edad"
+	Llamar nueva_linea
+	Escriba "Digite su edad: "
+	Lea edad
+	Si edad >= 18 Entonces
+		Escriba "Eres mayor de edad."
+	Sino
+		Escriba "Eres menor de edad."
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

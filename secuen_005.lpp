@@ -1,0 +1,30 @@
+/*
+5. Suponga que tiene Ud. una tienda y desea registrar las ventas en una computadora. Diseñe un algoritmo en pseudocódigo que lea por cada cliente:
+- El monto de la venta calcule e imprima el IVA.
+- Calcule e imprima en total a pagar.
+- Lea la cantidad con la que paga el cliente calcule e imprima el cambio.
+*/
+
+Entero monto, monto_iva, total_pagar, pago_cliente, cambio
+
+INICIO
+Escriba "Bienvenido al ejercicio No. 5"
+Llamar nueva_linea
+Escriba "Digite el monto de la venta: $"
+Lea monto
+Llamar nueva_linea
+Escriba "Digite el valor del dinero entregado por el cliente: $"
+Lea pago_cliente
+monto_iva <- monto * 0.19
+total_pagar <- monto + monto_iva
+cambio <- pago_cliente - total_pagar
+Llamar nueva_linea
+Escriba "El monto de la venta es de: $",monto
+Llamar nueva_linea
+Escriba "El IVA es por: $", monto_iva
+Llamar nueva_linea
+Escriba "Total a pagar: $", total_pagar
+Llamar nueva_linea
+Escriba "Cambio: $", cambio
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

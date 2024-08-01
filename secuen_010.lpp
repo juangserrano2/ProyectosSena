@@ -1,0 +1,14 @@
+/*
+10. Escriba un algoritmo que permita emitir la factura correspondiente 
+a una compra de seis (6) artículos determinados, del que se adquieren una o varias unidades.
+El IVA es del 19%.
+
+NOTA: ES EL MISMO EJERCICIO 04 DEL TALLER.
+*/
+
+
+
+INICIO
+	Escriba "Sistema de Facturación"
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

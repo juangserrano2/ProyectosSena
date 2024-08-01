@@ -1,0 +1,24 @@
+/*
+11. Elabore un algoritmo que lea los tres (3) lados de un triángulo cualquiera y calcule su área, 
+considerar: Si A, B y C son lados, y S, el semiperímetro.
+*/
+
+Real a, b, c, s, area
+
+INICIO
+	Escriba "Sistema de cálculo de area de un triángulo."
+	Llamar nueva_linea
+	Escriba "Digite el valor del lado A: "
+	Lea a
+	Llamar nueva_linea
+	Escriba "Digite el valor del lado B: "
+	Lea b
+	Llamar nueva_linea
+	Escriba "Digite el valor del lado C: "
+	Lea c
+	Llamar nueva_linea
+	s <- (a+b+c) / 2
+	area <- (s*(s-a)*(s-b)*(s-c))^0.5
+	Escriba "El area del triangulo es: ",area	
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

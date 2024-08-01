@@ -1,0 +1,30 @@
+/*
+07. En una universidad los estudiantes pueden pagar el valor de su matrícula en cuatro cuotas de la siguiente forma
+•Primera cuota: 30%
+•Segunda cuota: 30%
+•Tercera cuota: 20%
+•Cuarta cuota: 20%
+Diga cuanto es el valor que tiene que pagar por cuota un estudiante si el valor del semestre es $8,790,000
+*/
+
+Entero matricula, cuota1, cuota2, cuota3, cuota4
+
+INICIO
+	Escriba "Sistema de calculo de cuotas de matrículas universitarias."
+	Llamar nueva_linea
+	Escriba "Digite el valor de la matrícula: $"
+	Lea matricula
+	cuota1 <- matricula * 0.30
+	cuota2 <- matricula * 0.30
+	cuota3 <- matricula * 0.20
+	cuota4 <- matricula * 0.20
+	Llamar nueva_linea
+	Escriba "El valor de la primera cuota es de: $", cuota1
+	Llamar nueva_linea
+	Escriba "El valor de la segunda cuota es de: $", cuota2
+	Llamar nueva_linea
+	Escriba "El valor de la tercera cuota es de: $", cuota3
+	Llamar nueva_linea
+	Escriba "El valor de la cuarta cuota es de: $", cuota4
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

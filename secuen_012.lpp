@@ -1,0 +1,28 @@
+/*
+12. Diseñe un programa que lea la cantidad de alumnos de redes, contabilidad y diseño. Determine el porcentaje de alumnos de cada uno de los cursos.
+*/
+
+Entero cant_alumnos_redes, cant_alumnos_contabilidad, cant_alumnos_diseno, total_alumnos
+Real porcen_redes, porcen_contabilidad, porcen_diseno
+
+INICIO
+	Escriba "Sistema de calculo de alumos por curso"
+	Llamar nueva_linea
+	Escriba "Ingrese la cantidad de alumnos de la clase de REDES: "
+	lea cant_alumnos_redes
+	Escriba "Ingrese la cantidad de alumnos de la clase de CONTABILIDAD: "
+	lea cant_alumnos_contabilidad
+	Escriba "Ingrese la cantidad de alumnos de la clase de DISEÑO: "
+	lea cant_alumnos_diseno
+	Llamar nueva_linea
+	total_alumnos <- cant_alumnos_redes + cant_alumnos_contabilidad + cant_alumnos_diseno
+	porcen_redes <- (cant_alumnos_redes / total_alumnos) * 100
+	porcen_contabilidad <- (cant_alumnos_contabilidad / total_alumnos) * 100
+	porcen_diseno <- (cant_alumnos_diseno / total_alumnos) * 100
+	Escriba "El porcentaje de alumnos en REDES es de: ",porcen_redes,"%"
+	Llamar nueva_linea
+	Escriba "El porcentaje de alumnos en CONTABILIDAD es de: ",porcen_contabilidad,"%"
+	Llamar nueva_linea
+	Escriba "El porcentaje de alumnos en DISEÑO es de: ",porcen_diseno,"%"
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

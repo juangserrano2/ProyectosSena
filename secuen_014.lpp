@@ -1,0 +1,20 @@
+/*
+14. Dos vehículos viajan a diferentes velocidades (V1 y V2) y están distanciados por una distancia D.
+El que está detrás (V1) viaja a una velocidad mayor. Se pide hacer un algoritmo para ingresar la distancia entre los dos vehículos
+(km) y sus respectivas velocidades (km/h) y con esto determinar y mostrar en que tiempo (minutos) alcanzará el vehículo más rápido al otro.
+*/
+
+
+INICIO
+	Escriba "Sistema de calculo de tiempo de alcance de vehículos."
+	Llamar nueva_linea
+	Escriba "Digite la velocidad del vehículo que va adelante: "
+	Lea velocidad2
+	Llamar nueva_linea
+	Escriba "Digite la distancia entre el primer  y segundo vehículo: "
+	Lea distancia
+	Escriba "Digite la velocidad del vehículo que va detrás (Más rápido): "
+	Lea velocidad1
+	minutos <- 
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

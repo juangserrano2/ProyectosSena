@@ -1,0 +1,23 @@
+/*
+09. Un trabajador tiene una tarifa de $75,000 la hora. Se sabe que a todo trabajador se les descuenta el equivalente a 5 horas de trabajo, por cada falta. 
+Realice un programa que determine y muestre el sueldo neto de un trabajador a partir del número de horas trabajadas, de su tarifa horaria y considerando el descuento por concepto de faltas.
+*/
+
+Entero valor_hora, numero_horas, numero_faltas, sueldo_neto
+
+INICIO
+	Escriba "Sistema de calculo de faltas para Nómina."
+	Llamar nueva_linea
+	Escriba "Digite el valor por hora del trabajador: $"
+	Lea valor_hora
+	Llamar nueva_linea
+	Escriba "Digite el número de horas trabajadas: "
+	Lea numero_horas
+	Llamar nueva_linea
+	Escriba "Digite el número de faltas cometidas: "
+	Lea numero_faltas
+	sueldo_neto <- (valor_hora * numero_horas) - (numero_faltas * (valor_hora * 5))
+	Llamar nueva_linea
+	Escriba "El salario neto del trabajador es de: $", sueldo_neto
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

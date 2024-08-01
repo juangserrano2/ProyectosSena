@@ -1,0 +1,18 @@
+/*
+13. Dado un número natural de dos cifras, diseñe un algoritmo que permita obtener el número invertido. Ejemplo: si se ingresa 23 que se muestre 32.
+*/
+
+Entero numero_inicial, numero_invertido, ultimo_digito, primer_digito
+
+
+INICIO
+	Escriba "Bienvenido al sistema de ordenamiento de números de forma invertida."
+	Llamar nueva_linea
+	Escriba "Digite un número de 2 cifras: "
+	Lea numero_inicial
+	ultimo_digito <- numero_inicial mod 10
+	primer_digito <- numero_inicial div 10	
+	Llamar nueva_linea
+	Escriba "El número invertido es: ", ultimo_digito, primer_digito
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

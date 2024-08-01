@@ -1,0 +1,18 @@
+/*
+08. Construya un programa tal que dados los datos enteros (a, b), escriba el resultado de la siguiente expresion algebraica: x=(a+b)^2 / 3
+*/
+
+Real x, a, b
+
+INICIO
+	Escriba "Sistema de Cáldulo de Expreisones algebraicas tipo x=(a+b)^2/3"
+	Llamar nueva_linea
+	Escriba "Digite el valor de a: "
+	Lea a
+	Escriba "Digite el valor de b: "
+	Lea b
+	x <- (a+b)^2/3
+	Llamar nueva_linea
+	Escriba "El resultado es: ", x
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

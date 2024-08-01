@@ -1,0 +1,33 @@
+/*
+Desarrollar un algoritmo que permita generar la colilla de pago de los empleados de una empresa. La colilla debe mostrar:
+•El Salario del Empleado.
+•El Valor de Ahorro mensual programado (suponiendo que un empleado decide ahorrar un porcentaje del 1% de dinero que se deducirá del pago).
+•La suma a deducir por aporte a la Salud (EPS).
+•La suma a deducir por aporte al Fondo de Pensiones (AFP).
+•Total, a recibir.
+El porcentaje establecido por ley para Pensión y Salud es del 4%. Toda la información que debe proveer el usuario del programa es el Salario del Empleado 
+y la El Valor de Ahorro mensual programado. El programa debe calcular y devolver el resto de los datos.
+*/
+
+Entero salario, ahorro, salud, pension, total
+
+INICIO
+	Escriba "Bienvenido al sistema de Colillas de pago de Empleados."
+	Llamar nueva_linea
+	Escriba "Ingrese su salario: "
+	Lea salario
+	Escriba "Ingrese el valor del ahorro mensual programado: "
+	Lea ahorro
+	Llamar nueva_linea
+	salud <- salario * 0.04
+	pension <- salario * 0.04
+	total <- salario - (ahorro + salud + pension)
+	Escriba "La información de su colilla de pago es la siguiente:"
+	Llamar nueva_linea
+	Escriba "La deducción de Salud equivale a: $", salud
+	Llamar nueva_linea
+	Escriba "La deducción del Fondo de Pensiones equivale a: $", pension
+	Llamar nueva_linea
+	Escriba "El total a recibir es de: $", total
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya

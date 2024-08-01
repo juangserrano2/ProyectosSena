@@ -1,0 +1,23 @@
+/* 06. Desarrolle un algoritmo que permite leer dos números y ordenarlos de menor a mayor, si es el caso. */
+
+Entero numero1, numero2
+
+INICIO
+	Escriba "Bienvenidos al sistema de ordenamiento de números."
+	Llamar nueva_linea
+	Escriba "Digite el primer número: "
+	Lea numero1
+	Escriba "Digite el segundo número: "
+	Lea numero2
+	Si numero1 > numero2 Entonces
+		Escriba "El número menor es: ", numero2, " y el número mayor es: ", numero1
+	Sino
+		Si numero1 < numero2 Entonces
+			Escriba "El número menor es: ", numero1, " y el número mayor es: ", numero2
+		Sino
+			Escriba "Los dos números son iguales"
+		Fin Si
+	Fin Si
+FIN
+// Ejercicio realizado por: Juan Gabriel Serrano Anaya
+

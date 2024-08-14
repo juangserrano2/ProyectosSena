@@ -1,0 +1,29 @@
+/* Leer N número e imprimir cuántos son positivos, negativos y cuántos neutros */
+
+Entero i, n, num, pos, neg, neutros
+INICIO
+	/* Se inicializan las variables contadoras: pos, neg, neutros */
+	pos <- 0
+	neg <- 0
+	neutros <- 0
+	Escriba "Cantidad de números: "
+	Lea n
+	Para i <- 1 Hasta n Haga
+		Escriba "Número ", i, ": "
+		Lea num
+		Si (num = 0) Entonces
+			neutros<- neutros + 1
+		Sino
+			Si (num > 0) Entonces
+				pos <- pos + 1
+			Sino
+				neg <- neg + 1
+			Fin Si
+		Fin Si
+	Fin Para
+	Escriba "Números positivos: ", pos
+	Llamar nueva_linea
+	Escriba "Número negativos: ", neg
+	Llamar nueva_linea
+	Escriba "Números neutros: ", neutros
+FIN

@@ -1,0 +1,19 @@
+/*
+2.
+Construya un programa tal que dados los datos enteros de a y b, 
+escriba el resultado de la siguiente expresión algebraica: X = (a+b)^2 / 3
+*/
+
+Entero a, b, x
+
+INICIO
+	Escriba "Sistema de Expresión Algebraica"
+	Llamar nueva_linea
+	Escriba "Digite el valor de a: "
+	Lea a
+	Escriba "Digite el valor de b: "
+	Lea b
+	x <- ((a+b)^2)/3
+	Llamar nueva_linea
+	Escriba "El resultado de la operación es: ", x
+FIN

@@ -1,0 +1,19 @@
+/*
+Diseñar un algoritmo que calcule el promedio de notas del primer parcial de un curso de N estudiantes.
+*/
+
+entero i, n
+Real nota, promedio, suma
+INICIO
+	suma <- 0 /* Variable de tipo acumulador */
+	Escriba "Cantidad de notas: "
+	Lea n
+	Para i <- 1 Hasta n Haga
+		Escriba "Digite su nota: "
+		Lea nota
+		suma <- suma + nota
+	Fin Para
+	promedio <- suma / n
+	Llamar nueva_linea
+	Escriba "El promedio es: ", promedio
+FIN

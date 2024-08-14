@@ -1,0 +1,16 @@
+/* Calcule la suma de N términos de la serie de Fibonacci */
+/* Fibonacci = 0,1,1,2,3,5,8,13,21,34,55,89,....... */
+
+Entero a, b, temp, i, n
+INICIO
+	Escriba "Término de la sucesión: "
+	Lea n
+	a <- 0
+	b <- 1
+	Para i <- 1 Hasta n Haga
+		Escriba a, " | "
+		temp <- a + b
+		a <- b
+		b <- temp
+	Fin Para
+FIN

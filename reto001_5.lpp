@@ -1,0 +1,46 @@
+/*
+5.
+Los tramos impositivos de la declaración de la renta en un determinado país son los siguientes:
+Renta							Tipo impositivo
+Menos de $100,000				5%
+Entre $100,000 y $200,000		15%
+Entre $200,000 y $350,000		20%
+Entre $350,000 y $600,000		30%
+Mas de $600,000					40%
+Escriba un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo 
+impositivo que le corresponde.
+*/
+
+
+Entero renta_anual, impositivo
+
+INICIO
+	Escriba "Sistema de tramos impositivos"
+	Llamar nueva_linea
+	Escriba "Digite la renta anual: "
+	Lea renta_anual
+	Si (renta_anual < 100000) Entonces
+		Escriba "El tipo impositivo que le corresponde es del 5%"
+		impositivo <- renta_anual * 0.05
+	Sino
+		Si (renta_anual >= 100000) y (renta_anual < 200000) Entonces
+			Escriba "El tipo impositivo que le corresponde es del 15%"
+			impositivo <- renta_anual * 0.15
+		Sino
+			Si (renta_anual >= 200000) y (renta_anual < 350000) Entonces
+				Escriba "El tipo impositivo que le corresponde es del 20%"
+				impositivo <- renta_anual * 0.20
+			Sino
+				Si (renta_anual >= 350000) y (renta_anual < 600000) Entonces
+					Escriba "El tipo impositivo que le corresponde es del 30%"
+					impositivo <- renta_anual * 0.30
+				Sino
+					Escriba "El tipo impositivo que le corresponde es del 40%"
+					impositivo <- renta_anual * 0.40
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+	Llamar nueva_linea
+	Escriba "Valor Impositivo: $", impositivo
+FIN

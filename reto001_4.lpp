@@ -1,0 +1,28 @@
+/*
+Leer dos enteros A y B y calcular F de acuerdo a las siguientes reglas:
+a. F = 2 * A + B, Si A2 – B2 < 0
+b. F = A2 - 2 * B, Si A2 – B2 = 0
+c. F = A + B, Si A2 – B2 > 0
+*/
+
+Entero a, b, operacion, f
+
+
+INICIO
+	Escriba "Digite el valor de A: "
+	Lea a
+	Llamar nueva_linea
+	Escriba "Digite el valor de B: "
+	Lea b
+	operacion <- (a^2) - (b^2)
+	Si (operacion) < 0 Entonces
+		f <- 2 * a + b
+	Sino
+		Si (operacion) = 0 Entonces
+			f <- a^2 - 2 * b
+		Sino
+			f <- a + b
+		Fin Si
+	Fin Si
+	Escriba "El resultado de la operación es: ", f
+FIN

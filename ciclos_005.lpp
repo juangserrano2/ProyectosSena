@@ -1,0 +1,30 @@
+/*
+
+*/
+
+Entero cantidad_vendedores, sueldo_base, i, j, venta_temp, venta_total, comision
+
+INICIO
+	venta_temp <- 0
+	venta_total <- 0
+	Escriba "Digite la cantidad de vendedores: "
+	Lea cantidad_vendedores
+	Llamar nueva_linea
+	Escriba "Digite el sueldo base de los vendedores: $"
+	Lea sueldo_base
+	Para i <- 1 Hasta cantidad_vendedores Haga
+		Para j <- 1 Hasta 3 Haga
+			Llamar nueva_linea
+			Escriba "Digite la venta ", j, " del vendedor ", i,": "
+			Lea venta_temp
+			venta_total <- venta_total + venta_temp
+		Fin Para
+		comision <- venta_total * 0.10
+		Llamar nueva_linea
+		Escriba "El total de las ventas del vendedor ", i , " es de: ", venta_total
+		Llamar nueva_linea
+		Escriba "Las comisiones del vendedor ", i , " son de: ", comision
+		venta_total <- 0
+		comision <- 0
+	Fin Para
+FIN

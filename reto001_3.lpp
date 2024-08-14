@@ -1,0 +1,19 @@
+/*
+3.
+Determinar la hipotenusa de un triangulo rectangulo conocidas las longitudes de los catetos
+
+*/
+
+Real a, b, c
+
+INICIO
+	Escriba "Sistema de Hipotenusa"
+	Llamar nueva_linea
+	Escriba "Digite el valor de a: "
+	Lea a
+	Escriba "Digite el valor de b: "
+	Lea b
+	c <- (a^2 + b^2)^(1 /2)
+	Llamar nueva_linea
+	Escriba "El resultado de la hipotenusa es de: ", c
+FIN

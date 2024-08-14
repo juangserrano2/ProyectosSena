@@ -1,0 +1,19 @@
+/*
+Ejercicio 2.
+La E.S.E. Hospital Nino Jesus de Barranquilla coloca vacunas a los bebes menores de un ano y la dosis a aplicar depende del peso y la edad del bebe segun la siguiente formula: 
+Realice un algoritmo que determine la dosis de la vacuna a aplicar a un bebe.
+*/
+Entero edad
+Real peso, dosis_vacuna
+
+INICIO
+	Escriba "Digite la edad del bebé en meses: "
+	Lea edad
+	Llamar nueva_linea
+	Escriba " Digite el peso del bebé: "
+	Lea peso
+	dosis_vacuna <- (peso+10) / (10 * edad) + 8
+	Llamar nueva_linea
+	Escriba "La dosis de la vacuna debe ser de: ", dosis_vacuna
+FIN
+// Ejercicio de Evaluación realizado por Juan Gabriel Serrano Anaya

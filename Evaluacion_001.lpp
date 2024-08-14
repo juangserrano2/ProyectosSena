@@ -1,0 +1,22 @@
+/*
+Ejercicio 1.
+Una institución educativa les paga a sus profesores $80,000 la hora y le hace un descuento del 5% por concepto de ahorro programado.
+Determine el monto del descuento y el monto total a pagar al profesor.
+*/
+
+Entero valor_hora, horas_trabajadas, salario_neto, monto_descuento, total_pagar
+
+INICIO
+	Escriba "Digite el valor de la hora: $"
+	Lea valor_hora
+	Escriba "Digite las horas trabajadas: "
+	Lea horas_trabajadas
+	Llamar nueva_linea
+	salario_neto <- valor_hora * horas_trabajadas
+	monto_descuento <- salario_neto * 0.05
+	total_pagar <- salario_neto - monto_descuento
+	Escriba "El monto del descuento equivale a : $", monto_descuento
+	Llamar nueva_linea
+	Escriba "El total a pagar equivale a : $", total_pagar
+FIN
+// Ejercicio de Evaluación realizado por Juan Gabriel Serrano Anaya

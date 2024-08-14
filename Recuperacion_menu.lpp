@@ -1,0 +1,163 @@
+/* Variables del menú */
+Entero opc
+Cadena [1] resp
+
+/* Variables del ejercicio 1 */
+Entero horas_trabajadas, numero_faltas, salario_neto
+
+/* Variables Ejercicio 2 */
+Real a, b, c
+
+/* Variables ejercicio 3 */
+
+
+/* Variables ejercicio 4 */
+Real f, operacion
+
+/* Variables ejercicio 5 */
+Entero renta_anual, impositivo
+
+INICIO
+	Repita
+		Llamar limpiar_pantalla
+		Escriba "************************************************"
+		Llamar nueva_linea
+		Escriba "1. Ejercicio 1"
+		Llamar nueva_linea
+		Escriba "2. Ejercicio 2"
+		Llamar nueva_linea
+		Escriba "3. Ejercicio 3"
+		Llamar nueva_linea
+		Escriba "4. Ejercicio 4"
+		Llamar nueva_linea
+		Escriba "5. Ejercicio 5"
+		Llamar nueva_linea
+		Escriba "6. Salir"
+		Llamar nueva_linea
+		Escriba "************************************************"
+		Llamar nueva_linea
+		Escriba "Digite una opción: "
+		Lea opc
+		
+		Caso Opc
+			1: 
+				Repita
+					Llamar limpiar_pantalla
+					Escriba "Sistema de salarios"
+					Llamar nueva_linea
+					Escriba "Digite el número de horas trabajadas: "
+					Lea horas_trabajadas
+					Escriba "Digite el número de faltas cometidas por el trabajador: "
+					Lea numero_faltas
+					salario_neto <- (75000*horas_trabajadas) - (numero_faltas * (75000 * 5))
+					Llamar nueva_linea
+					Escriba "El salario Neto del empleado es de: $", salario_neto
+					Llamar nueva_linea
+					Escriba "Desea Continuar? (Y/N): "
+					Lea resp
+				Hasta ((resp = "n") o (resp = "N"))
+				
+			2:
+				Repita
+					Escriba "Sistema de Expresión Algebraica"
+					Llamar nueva_linea
+					Escriba "Digite el valor de a: "
+					Lea a
+					Escriba "Digite el valor de b: "
+					Lea b
+					x <- ((a+b)^2)/3
+					Llamar nueva_linea
+					Escriba "El resultado de la operación es: ", x
+					Llamar nueva_linea
+					Escriba "Desea Continuar? (Y/N): "
+					Lea resp
+				Hasta ((resp = "n") o (resp = "N"))
+				
+			3:
+				Repita
+					Escriba "Sistema de Hipotenusa"
+					Llamar nueva_linea
+					Escriba "Digite el valor de a: "
+					Lea a
+					Escriba "Digite el valor de b: "
+					Lea b
+					c <- (a^2 + b^2)^(1 /2)
+					Llamar nueva_linea
+					Escriba "El resultado de la hipotenusa es de: ", c
+					Llamar nueva_linea
+					Escriba "Desea Continuar? (Y/N): "
+					Lea resp
+				Hasta ((resp = "n") o (resp = "N"))
+				
+			4:
+				Repita
+					Escriba "Digite el valor de A: "
+					Lea a
+					Llamar nueva_linea
+					Escriba "Digite el valor de B: "
+					Lea b
+					operacion <- (a^2) - (b^2)
+					Si (operacion) < 0 Entonces
+						f <- 2 * a + b
+					Sino
+						Si (operacion) = 0 Entonces
+							f <- a^2 - 2 * b
+						Sino
+							f <- a + b
+						Fin Si
+					Fin Si
+					Escriba "El resultado de la operación es: ", f
+					Llamar nueva_linea
+					Escriba "Desea Continuar? (Y/N): "
+					Lea resp
+				Hasta ((resp = "n") o (resp = "N"))
+				
+			5:
+				Repita
+					Escriba "Sistema de tramos impositivos"
+					Llamar nueva_linea
+					Escriba "Digite la renta anual: "
+					Lea renta_anual
+					Si (renta_anual < 100000) Entonces
+						Escriba "El tipo impositivo que le corresponde es del 5%"
+						impositivo <- renta_anual * 0.05
+					Sino
+						Si (renta_anual >= 100000) y (renta_anual < 200000) Entonces
+							Escriba "El tipo impositivo que le corresponde es del 15%"
+							impositivo <- renta_anual * 0.15
+						Sino
+							Si (renta_anual >= 200000) y (renta_anual < 350000) Entonces
+								Escriba "El tipo impositivo que le corresponde es del 20%"
+								impositivo <- renta_anual * 0.20
+							Sino
+								Si (renta_anual >= 350000) y (renta_anual < 600000) Entonces
+									Escriba "El tipo impositivo que le corresponde es del 30%"
+									impositivo <- renta_anual * 0.30
+								Sino
+									Escriba "El tipo impositivo que le corresponde es del 40%"
+									impositivo <- renta_anual * 0.40
+								Fin Si
+							Fin Si
+						Fin Si
+					Fin Si
+					Llamar nueva_linea
+					Escriba "Valor Impositivo: $", impositivo
+					Llamar nueva_linea
+					Escriba "Desea Continuar? (Y/N): "
+					Lea resp
+				Hasta ((resp = "n") o (resp = "N"))
+				
+				6:
+					Llamar limpiar_pantalla
+					Escriba "*****************************************"
+					Llamar nueva_linea
+					Escriba "CENTRO NACIONAL COLOMBO ALEMAN - SEDE TIC"
+					Llamar nueva_linea
+					Escriba "            Copiright, 2024              "
+					Llamar nueva_linea
+					Escriba "*****************************************"
+				Sino:
+					Llamar limpiar_pantalla
+		Fin Caso
+	Hasta (opc = 6)
+FIN

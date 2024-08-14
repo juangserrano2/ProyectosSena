@@ -1,0 +1,28 @@
+/*
+Ejercicio 4.
+Diseñe un algoritmo que lea tres longitudes (expresadas en centímetros) determine que tipo de triángulo es:
+Equilátero, Isósceles o Escaleno.
+*/
+
+Entero a, b, c
+
+INICIO
+	Escriba "Digite el lado A del triangulo (En cms): "
+	Lea a
+	Llamar nueva_linea
+	Escriba "Digite el lado B del triángulo (En cms): "
+	Lea b
+	Llamar nueva_linea
+	Escriba "Digite el lado C del triángulo (En cms): "
+	Lea c
+	Si (a = b) y (a = c) y (b = c) Entonces
+		Escriba "Es un triángulo equilátero"
+	Sino
+		Si (a = b) o (a = c) o (b = c) Entonces
+			Escriba "Es un triángulo Isóceles"
+		Sino
+			Escriba "Es un triángulo Escaleno"
+		Fin Si
+	Fin Si	
+FIN
+// Ejercicio de Evaluación realizado por Juan Gabriel Serrano Anaya

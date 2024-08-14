@@ -1,0 +1,35 @@
+/*
+Ejercicio 3.
+Una compañía dedicada a la renta de automóviles cobra un monto fijo de $450,000 para los primeros 300 km de recorrido.
+Para más de 300 km y hasta 1000 km, cobra un monto adicional de $ 25,000 por cada kilómetro en exceso sobre 300.
+Para mas de 1000 km cobra un monto adicional de $10,000 por cada kilómetro en exceso sobre 1000. Los precios ya incluyen el 19% del impuesto de valor agregado, IVA.
+Diseñe un algoritmo que determine el monto a pagar por el alquiler de un vehículo y el monto incluido del impuesto.
+*/
+Entero kilometraje, valor_kilometro, subtotal, iva, total
+
+
+INICIO
+	Escriba "Digite el kilometraje conducido del vehículo: "
+	Lea kilometraje
+	valor_kilometro <- 378151
+	Si kilometraje <= 300 Entonces
+		subtotal <- valor_kilometro * kilometraje
+	Sino
+		Si (kilometraje > 300) y (kilometraje <= 1000) Entonces
+			subtotal <- valor_kilometro * 300 + (25000 * (kilometraje - 300))
+		Sino
+			Si (kilometraje > 1000) Entonces
+				subtotal <- valor_kilometro * 1000 + (10000 * (kilometraje - 1000))
+			Sino
+				Escriba "No se puede digitar un valor negativo"
+			Fin Si
+		Fin Si
+	Fin Si
+	iva <- subtotal * 0.19
+	total <- subtotal + iva
+	Llamar nueva_linea
+	Escriba "El valor a pagar por el alquiler es de: $", total
+	Llamar nueva_linea
+	Escriba "El valor por impuestos equivale a: $", iva
+FIN
+// Ejercicio de Evaluación realizado por Juan Gabriel Serrano Anaya
